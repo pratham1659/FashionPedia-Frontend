@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 
@@ -19,10 +19,10 @@ function App() {
         />
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/error" element={<PageNotFound />} />
+          {/* <Route path="/" element={<Home />} /> */}
+          {/* <Route path="/error" element={<PageNotFound />} /> */}
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </>
   );
