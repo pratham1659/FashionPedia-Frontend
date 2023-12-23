@@ -112,16 +112,16 @@ const header = () => {
                       </a>
                       <ul className="submenu">
                         <li>
-                          <a href="#"></a>
+                          <a href="#">Latest</a>
                         </li>
                         <li>
-                          <a href="#"></a>
+                          <a href="#">Jumper</a>
                         </li>
                         <li>
-                          <a href="#"></a>
+                          <a href="#">A Must Read</a>
                         </li>
                         <li>
-                          <a href="#"></a>
+                          <a href="#">Gose Viral</a>
                         </li>
                       </ul>
                     </li>
