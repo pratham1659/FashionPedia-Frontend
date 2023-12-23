@@ -38,7 +38,7 @@ header :where(.wrap, .socials ul, .options, li a) {
   min-width: 68px;
   padding: 15px 20px;
   background-color: var(--white-color);
-  box-shadow: 0 20px 30px rgb(0 0 0/13%);
+  box-shadow: var(--boxshadow);
 
   opacity: 0;
   visibility: hidden;
@@ -121,6 +121,14 @@ header :where(.wrap, .socials ul, .options, li a) {
   font-family: var(--tertiary-font);
 }
 
+header li a {
+  transition: var(--transition-color);
+}
+
+header li a:hover {
+  color: var(--grey-color);
+}
+
 .header-main :where(nav li > a span, .logo) {
   font-weight: 700;
 }
@@ -141,4 +149,32 @@ header :where(.wrap, .socials ul, .options, li a) {
   line-height: initial;
   text-align: center;
   border-radius: 50%;
+}
+
+.header-main nav .submenu {
+  @include md {
+    position: absolute;
+    top: auto;
+    left: auto;
+    background-color: var(--white-color);
+    box-shadow: var(--boxshadow);
+    padding: 15px 20px;
+    margin-left: -20px;
+    line-height: 40px;
+    min-width: 150px;
+    z-index: 999;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: var(--transition-transform);
+  }
+}
+
+.header-main nav li:hover .submenu {
+  @include md {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
 }

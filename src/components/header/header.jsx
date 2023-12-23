@@ -1,5 +1,6 @@
 import "./style.scss";
 // import { productImg } from "../../data/productData";
+import shirt1 from "/assets/clothing/shirt_01.jpg";
 
 const header = () => {
   return (
@@ -99,6 +100,91 @@ const header = () => {
                         <span>Products</span>
                         <i className="ri-arrow-down-s-line"></i>
                       </a>
+                      <div className="megamenu">
+                        <div className="container">
+                          <div className="wrap">
+                            <div className="menus">
+                              <div className="links">
+                                <h3>clothing</h3>
+                                <ul>
+                                  <li>
+                                    <a href="#">Parada</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Gucci</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Zara</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">H&M</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Mango</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Chanel</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Ganni</a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div className="links">
+                                <h3>Shoes</h3>
+                                <ul>
+                                  <li>
+                                    <a href="#">Puma</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Adidas</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Nike</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Gucci</a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div className="links">
+                                <h3>Bag</h3>
+                                <ul>
+                                  <li>
+                                    <a href="#">Louis Vuitton</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Dior</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Versace</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Dolce & Gabbana</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div className="featured">
+                              <h3>Featured Products</h3>
+                              <div className="product object-cover">
+                                <div className="list">
+                                  <div className="product-thumb">
+                                    <span className="label">25% OFF</span>
+                                    <div className="thumbnail">
+                                      <a href="#">
+                                        <div className="image">
+                                          <img src={shirt1} alt="" />
+                                        </div>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </li>
                     <li>
                       <a href="#">
