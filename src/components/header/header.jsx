@@ -1,6 +1,5 @@
 import "./style.scss";
-// import { productImg } from "../../data/productData";
-import shirt1 from "/assets/clothing/shirt_01.jpg";
+import { productImg } from "../../data/productData";
 
 const header = () => {
   return (
@@ -168,18 +167,45 @@ const header = () => {
                             <div className="featured">
                               <h3>Featured Products</h3>
                               <div className="product object-cover">
-                                <div className="list">
-                                  <div className="product-thumb">
-                                    <span className="label">25% OFF</span>
-                                    <div className="thumbnail">
-                                      <a href="#">
-                                        <div className="image">
-                                          <img src={shirt1} alt="" />
-                                        </div>
-                                      </a>
+                                {/*  */}
+                                {productImg.map((product) => (
+                                  <div key={product.id} className="list">
+                                    <div className="product-thumb">
+                                      <span className="label">{product.label}</span>
+                                      <div className="thumbnail">
+                                        <a href="#">
+                                          <div className="image">
+                                            <img src={product.imageUrl} alt="" />
+                                          </div>
+                                          <div className="image hover-image">
+                                            <img src={product.imageHover} alt="" />
+                                          </div>
+                                        </a>
+                                      </div>
+                                      <div className="icons-act">
+                                        <ul>
+                                          {product.iconClass.map((iconObject, index) => (
+                                            <li key={index}>
+                                              {Object.values(iconObject).map((iconClassName, i) => (
+                                                <a key={i} href="" className={iconClassName}></a>
+                                              ))}
+                                            </li>
+                                          ))}
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div className="product-info">
+                                      <h2>
+                                        <a href="#">{product.title}</a>
+                                      </h2>
+                                      <div className="price">
+                                        <span className="before">{product.price[0].before}</span>
+                                        <span className="current">{product.price[1].after}</span>
+                                      </div>
                                     </div>
                                   </div>
-                                </div>
+                                ))}
+                                {/*  */}
                               </div>
                             </div>
                           </div>
