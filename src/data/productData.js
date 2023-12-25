@@ -37,3 +37,18 @@ export const productImg = [
   //   price: [{ before: "₹1200.00" }, { after: "₹799.00" }],
   // },
 ];
+
+export const productHero = [
+  {
+    id: 1,
+    imageUrl: "./assets/clothing/hero_01.jpg",
+  },
+  {
+    id: 2,
+    imageUrl: "./assets/clothing/hero_02.jpg",
+  },
+  {
+    id: 3,
+    imageUrl: "./assets/clothing/hero_03.jpg",
+  },
+];
