@@ -6,16 +6,22 @@ const Homepage = () => {
     <main>
       <div className="hero">
         <div className="container">
-          <div className="wrap">
-            <div className="object-cover">
-              <div className="list">
-                <a href="#">
-                  <div className="image">
-                    <img src="" alt="" />
+          <div className="wrap object-cover">
+            {productHero.map(
+              (product, index) =>
+                index < 5 && (
+                  <div key={product.id} className={`list ${product.id === 1 ? "big" : ""}`}>
+                    <a href="#">
+                      <div className="image">
+                        <img src={product.imageUrl} alt="" />
+                      </div>
+                      {/* <div className="info">
+                    <div className="btn-light">Shop Now</div>
+                  </div> */}
+                    </a>
                   </div>
-                </a>
-              </div>
-            </div>
+                )
+            )}
           </div>
         </div>
       </div>

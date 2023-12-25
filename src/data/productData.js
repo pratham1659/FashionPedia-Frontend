@@ -51,4 +51,20 @@ export const productHero = [
     id: 3,
     imageUrl: "./assets/clothing/hero_03.jpg",
   },
+  {
+    id: 4,
+    imageUrl: "./assets/clothing/hero_04.jpg",
+  },
+  {
+    id: 5,
+    imageUrl: "./assets/clothing/hero_05.jpg",
+  },
+  {
+    id: 6,
+    imageUrl: "./assets/clothing/hero_06.jpg",
+  },
+  {
+    id: 7,
+    imageUrl: "./assets/clothing/hero_07.jpg",
+  },
 ];

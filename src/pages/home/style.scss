@@ -1,0 +1,35 @@
+@import "/src/mixin.scss";
+
+// Hero Content Start From here
+
+.hero .wrap {
+  display: grid;
+  @include sm {
+    gap: 15px;
+  }
+
+  @include sm-md {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include md {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+.hero .wrap .list {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .big {
+  height: 335px;
+  @include sm-md {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.hero .list {
+  height: 230px;
+}
