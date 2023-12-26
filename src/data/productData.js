@@ -42,22 +42,27 @@ export const productHero = [
   {
     id: 1,
     imageUrl: "./assets/clothing/hero_01.jpg",
+    info: "Shop Now",
   },
   {
     id: 2,
     imageUrl: "./assets/clothing/hero_02.jpg",
+    info: "Trending",
   },
   {
     id: 3,
     imageUrl: "./assets/clothing/hero_03.jpg",
+    info: "Shoes",
   },
   {
     id: 4,
     imageUrl: "./assets/clothing/hero_04.jpg",
+    info: "Bag",
   },
   {
     id: 5,
     imageUrl: "./assets/clothing/hero_05.jpg",
+    info: "Glasses",
   },
   {
     id: 6,

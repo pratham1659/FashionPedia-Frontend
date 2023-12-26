@@ -195,7 +195,6 @@ header li a:hover {
     position: absolute;
     top: auto;
     left: auto;
-    //
     padding: 15px 20px;
     margin-left: -20px;
     line-height: 40px;
@@ -303,6 +302,7 @@ header li a:hover {
   object-fit: cover;
   height: 100%;
   position: absolute;
+  transition: all 0.75s cubic-bezier(0, 0, 2.1);
 }
 .hover-image {
   display: block;

@@ -28,8 +28,117 @@
     grid-column-start: 1;
     grid-column-end: 3;
   }
+
+  @include md {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 640px !important;
+  }
 }
 
 .hero .list {
   height: 230px;
+  @include md {
+    height: 320px;
+  }
+}
+
+.hero a:hover img {
+  transform: scale(1.1);
+}
+
+.hero .info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 10px 40px;
+  text-align: center;
+}
+
+.hero a:hover .btn-light {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+
+// Tabbed Styling from here ----------------------------------------------------------------------
+main > div {
+  margin-bottom: 90px;
+}
+
+.tabbed nav {
+  margin: 0 0 50px;
+}
+
+.tabbed nav ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 436px;
+  width: auto;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.tabbed nav ul li a {
+  font-size: clamp(20px, -0.875em + 8.333vw, 26px);
+  font-weight: 500;
+  transition: var(--transition-color);
+}
+
+.tabbed nav ul li:not(.active) a {
+  color: var(--grey-color);
+}
+
+.tabbed nav ul li a:hover {
+  color: var(--dark-color);
+}
+
+.tabbed nav ul li.active a {
+  border-bottom: 2px solid var(--dark-color);
+}
+
+//Product and colours ----------------------------------------------------------------
+.product .colors {
+  display: flex;
+  gap: 10px;
+  margin: 8px 0 15px;
+}
+
+.product .colors a {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.product .colors .maroon {
+  background-color: #b53471;
+}
+.product .colors .gold {
+  background-color: #ffc321;
+}
+
+.product .colors .beige {
+  background-color: #dadaae;
+}
+
+.product .colors a::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  // background-color: var(--dark-color);
+  left: 5px;
+  top: 5px;
+  transition: transform 0.3s;
+  transform: scale(0);
+}
+
+.product .colors a.active::before,
+.product .colors a:hover::before {
+  background-color: var(--light-color);
+  transform: scale(1);
+  border: 1px solid var(--white-color);
 }
