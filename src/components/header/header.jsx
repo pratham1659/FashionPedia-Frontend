@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./style.scss";
-import { productImg } from "../../data/productData";
+import { headerImg } from "../../data/productData";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
@@ -192,7 +192,7 @@ const Header = () => {
                               <h3>Featured Products</h3>
                               <div className="product object-cover">
                                 {/*  */}
-                                {productImg.map((product) => (
+                                {headerImg.map((product) => (
                                   <div key={product.id} className="list">
                                     <div className="product-thumb">
                                       <span className="label">{product.label}</span>

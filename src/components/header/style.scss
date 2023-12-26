@@ -219,6 +219,7 @@ header li a:hover {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+    z-index: 2;
   }
 }
 .megamenu {

@@ -1,4 +1,4 @@
-export const productImg = [
+export const headerImg = [
   {
     id: 1,
     imageUrl: "/assets/products/product_01.jpg",
@@ -27,15 +27,6 @@ export const productImg = [
     title: "The Shirt from US POLO",
     price: [{ before: "₹2300.00" }, { after: "₹1100.00" }],
   },
-  // {
-  //   id: 4,
-  //   imageUrl: "/assets/products/product_04.jpg",
-  //   imageHover: "/assets/products/product_04b.jpg",
-  //   iconClass: [{ star: "ri-star-line" }, { arrow: "ri-arrow-left-right-line" }, { eye: "ri-eye-line" }],
-  //   label: "-30%",
-  //   title: "The Hoodie from H&M",
-  //   price: [{ before: "₹1200.00" }, { after: "₹799.00" }],
-  // },
 ];
 
 export const productHero = [
@@ -71,5 +62,44 @@ export const productHero = [
   {
     id: 7,
     imageUrl: "./assets/clothing/hero_07.jpg",
+  },
+];
+
+export const arrivalImg = [
+  {
+    id: 1,
+    imageUrl: "./assets/clothing/denimpant_01.jpg",
+    imageHover: "./assets/clothing/denimpant_02.jpg",
+    iconClass: [{ star: "ri-star-line" }, { arrow: "ri-arrow-left-right-line" }, { eye: "ri-eye-line" }],
+    label: "-40%",
+    title: "The Denim from LEVIS",
+    price: [{ before: "₹2300.00" }, { after: "₹1100.00" }],
+  },
+  {
+    id: 2,
+    imageUrl: "./assets/products/product_06.jpg",
+    imageHover: "./assets/products/product_06b.jpg",
+    iconClass: [{ star: "ri-star-line" }, { arrow: "ri-arrow-left-right-line" }, { eye: "ri-eye-line" }],
+    label: "-40%",
+    title: "The SweatShirt from H&M",
+    price: [{ before: "₹2300.00" }, { after: "₹1100.00" }],
+  },
+  {
+    id: 3,
+    imageUrl: "./assets/products/product_07.jpg",
+    imageHover: "./assets/products/product_07b.jpg",
+    iconClass: [{ star: "ri-star-line" }, { arrow: "ri-arrow-left-right-line" }, { eye: "ri-eye-line" }],
+    label: "-40%",
+    title: "The SweatShirt from KMR",
+    price: [{ before: "₹2300.00" }, { after: "₹1100.00" }],
+  },
+  {
+    id: 3,
+    imageUrl: "./assets/products/product_08.jpg",
+    imageHover: "./assets/products/product_08b.jpg",
+    iconClass: [{ star: "ri-star-line" }, { arrow: "ri-arrow-left-right-line" }, { eye: "ri-eye-line" }],
+    label: "-40%",
+    title: "The SweatShirt from KMR",
+    price: [{ before: "₹2300.00" }, { after: "₹1100.00" }],
   },
 ];

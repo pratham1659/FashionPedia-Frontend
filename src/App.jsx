@@ -2,9 +2,9 @@ import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 
-import Header from "./components/header/header";
+import Header from "./components/header/Header";
 import Homepage from "./pages/home/Homepage";
-// import Footer from "./components/footer/footer";
+import Footer from "./components/footer/footer";
 // import PageNotFound from "./pages/error/pageNotFound";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<Homepage />} />
           {/* <Route path="/error" element={<PageNotFound />} /> */}
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </>
   );

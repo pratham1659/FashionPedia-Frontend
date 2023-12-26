@@ -1,0 +1,61 @@
+@import "/src/mixin.scss";
+
+.inner-footer {
+  font-size: 16px;
+  padding: 0 0 60px;
+  color: #7f7f7f;
+}
+
+.inner-footer .wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+
+  @include md {
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+  }
+}
+
+.inner-footer .wrap h3 {
+  font-weight: 700;
+  color: var(--dark-color);
+  margin-bottom: 15px;
+}
+
+.inner-footer .wrap > div:not(.subscribe) h3 {
+  font-size: 20px;
+}
+
+.inner-footer .socials ul {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  color: var(--dark-color);
+}
+
+footer a {
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: var(--dark-color);
+}
+footer .socials a:hover {
+  color: var(--grey-color);
+}
+
+form.search input[type="text"] {
+  width: 100%;
+  height: 46px;
+  left: 0;
+  top: 0;
+  padding: 10px 15px 10px 40px;
+  border: 1px solid var(--grey-color);
+  border-radius: 6px;
+}
+
+.copyright {
+  text-align: center;
+}
+.copyright p {
+  font-size: 18px;
+}

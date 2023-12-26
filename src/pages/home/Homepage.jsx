@@ -1,5 +1,7 @@
 import "./style.scss";
-import { productImg, productHero } from "../../data/productData";
+import { productHero, arrivalImg } from "../../data/productData";
+import videoImg from "/assets/clothing/hero_06.jpg";
+import demoImg from "/assets/clothing/hero_07.png";
 
 const Homepage = () => {
   return (
@@ -33,23 +35,23 @@ const Homepage = () => {
         <div className="container">
           <div className="wrap">
             <nav className="tabs">
-              <ul>
-                <li className="active">
+              <ul className="swiper-wrapper">
+                <li className=" swiper-slide active">
                   <a href="">New Arrivals</a>
                 </li>
-                <li>
+                <li className="swiper-slide">
                   <a href="#0">On Sale</a>
                 </li>
-                <li>
+                <li className="swiper-slide">
                   <a href="#0">Best Seller</a>
                 </li>
               </ul>
             </nav>
-            <div className="tabs-box">
-              <div className="wrapper">
-                <div className="slide">
+            <div className="tabs-box swiper">
+              <div className="swiper-wrapper">
+                <div className="swiper-slide">
                   <div className="product object-cover">
-                    {productImg.map((product) => (
+                    {arrivalImg.map((product) => (
                       <div key={product.id} className="list">
                         <div className="product-thumb">
                           <span className="label">{product.label}</span>
@@ -103,6 +105,49 @@ const Homepage = () => {
           </div>
         </div>
       </div>
+      {/* tabbed container start from here  */}
+
+      {/* Video container start from here */}
+      <div className="video">
+        <div className="container">
+          <div className="wrap">
+            <div className="video-box object-cover">
+              <div className="image">
+                <img src={videoImg} alt="video" />
+              </div>
+              <div className="attribute">
+                <i className="ri-play-fill"></i>
+                <h3>The Ambassador</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Video container ends here */}
+
+      {/* Youtube container start from here */}
+      {/* Youtube container ends Here */}
+
+      {/* Social Media Banner Start from here */}
+      <div className="banner">
+        <div className="container">
+          <div className="wrap object-cover">
+            <div className="bg-image">
+              <img src={demoImg} alt="" />
+            </div>
+            <div className="info">
+              <span>Hot Deals</span>
+              <h3>Casual Dress</h3>
+              <div className="button">
+                <a href="" className="btn-light">
+                  Shop Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Social Media Banner Ends from here */}
     </main>
   );
 };

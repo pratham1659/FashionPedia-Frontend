@@ -78,6 +78,14 @@ main > div {
   padding-bottom: 10px;
   margin: 0 auto;
   align-items: center;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-snap-align: start;
+}
+
+.tabbed nav li {
+  width: fit-content !important;
 }
 
 .tabbed nav ul li a {
@@ -98,6 +106,11 @@ main > div {
   border-bottom: 2px solid var(--dark-color);
 }
 
+.tabbed .button {
+  text-align: center;
+  margin: 30px 0 0;
+}
+
 //Product and colours ----------------------------------------------------------------
 .product .colors {
   display: flex;
@@ -112,6 +125,7 @@ main > div {
   border-radius: 50%;
 }
 
+// Products and thier colours ----------------------------------------------------------------
 .product .colors .maroon {
   background-color: #b53471;
 }
@@ -123,13 +137,47 @@ main > div {
   background-color: #dadaae;
 }
 
+.product .colors .bluejean1 {
+  background-color: #22699b;
+}
+
+.product .colors .bluejean2 {
+  background-color: #6f9fc1;
+}
+.product .colors .bluejean3 {
+  background-color: #6f9fc1;
+}
+
+.product .colors .tosca {
+  background-color: #67b2a7;
+}
+.product .colors .army {
+  background-color: #859288;
+}
+.product .colors .orange {
+  background-color: #d59000;
+}
+.product .colors .light {
+  background-color: var(--light-color);
+}
+.product .colors .carmin {
+  background-color: #9e483f;
+}
+
+.product .colors .highheels {
+  background-color: #e3cdb9;
+}
+.product .colors .highheels2 {
+  background-color: #616161;
+}
+
 .product .colors a::before {
   content: "";
   position: absolute;
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  // background-color: var(--dark-color);
+  background-color: var(--white-color);
   left: 5px;
   top: 5px;
   transition: transform 0.3s;
@@ -141,4 +189,82 @@ main > div {
   background-color: var(--light-color);
   transform: scale(1);
   border: 1px solid var(--white-color);
+}
+
+// Video Styling Start from here ----------------------------------------------------------------
+
+.video-box {
+  position: relative;
+  height: 500px;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.video-box .attribute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.video-box .attribute i {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border: 2px solid var(--white-color);
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.video-box .attribute h3 {
+  font-size: clamp(26px, -0.875em + 8.333vw, 42px);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.video-box:hover img {
+  transform: scale(1.1);
+}
+
+//Banner Styling Start from here --------------------------------------------------------------
+
+.banner {
+  position: relative;
+  background-color: var(--light-color);
+}
+
+.banner .wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.banner .bg-image {
+  height: 300px;
+  position: relative;
+}
+
+.banner .info {
+  padding: 85px 0;
+}
+
+.banner .info span {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.banner .info h3 {
+  font-size: clamp(36px, -0.875em + 8.333vw, 50px);
+  margin-bottom: 30px;
 }
