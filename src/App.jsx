@@ -5,7 +5,7 @@ import LoadingBar from "react-top-loading-bar";
 import Header from "./components/header/Header";
 import Homepage from "./pages/home/Homepage";
 import Footer from "./components/footer/footer";
-// import PageNotFound from "./pages/error/pageNotFound";
+import PageNotFound from "./pages/error/pageNotFound";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Homepage />} />
-          {/* <Route path="/error" element={<PageNotFound />} /> */}
+          <Route path="/error" element={<PageNotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>

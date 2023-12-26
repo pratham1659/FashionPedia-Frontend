@@ -128,12 +128,12 @@ const Homepage = () => {
       {/* Youtube container start from here */}
       {/* Youtube container ends Here */}
 
-      {/* Social Media Banner Start from here */}
+      {/* Arrival Banner Start from here */}
       <div className="banner">
         <div className="container">
           <div className="wrap object-cover">
             <div className="bg-image">
-              <img src={demoImg} alt="" />
+              <img src={demoImg} alt="img" />
             </div>
             <div className="info">
               <span>Hot Deals</span>
@@ -147,7 +147,7 @@ const Homepage = () => {
           </div>
         </div>
       </div>
-      {/* Social Media Banner Ends from here */}
+      {/* Arrival Media Banner Ends from here */}
     </main>
   );
 };

@@ -114,12 +114,12 @@ const Header = () => {
                   </a>
                   <ul>
                     <li>
-                      <a href="#">
+                      <a href="/">
                         <span>Home</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="#0">
                         <span>Products</span>
                         <i className="ri-arrow-down-s-line"></i>
                       </a>
@@ -237,13 +237,8 @@ const Header = () => {
                       </div>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="#0">
                         <span>Shop</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span>Blog</span>
                         <i className="ri-arrow-down-s-line"></i>
                       </a>
                       <ul className="submenu">
@@ -260,6 +255,11 @@ const Header = () => {
                           <a href="#">Gose Viral</a>
                         </li>
                       </ul>
+                    </li>
+                    <li>
+                      <a href="/error">
+                        <span>Blog</span>
+                      </a>
                     </li>
                   </ul>
                 </nav>
